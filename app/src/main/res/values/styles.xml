@@ -1,0 +1,89 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--   color for the app bar and other primary UI elements -->
+        <item name="colorPrimary">@color/appColorPrimary</item>
+
+        <!--   a darker variant of the primary color, used for
+               the status bar (on Android 5.0+) and contextual app bars -->
+        <item name="colorPrimaryDark">@color/appColorPrimaryDark</item>
+
+        <!--   a secondary color for controls like checkboxes and text fields -->
+        <item name="colorAccent">@color/appColorPrimaryAccent</item>
+        <!--
+        <item name="dialogTheme">@style/AppTheme.CustomDialog</item>
+        <item name="alertDialogStyle">@style/AppTheme.CustomDialog</item>
+        -->
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="AppTheme.SeconderyTextView">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">#505050</item>
+        <item name="android:padding">2dp</item>
+    </style>
+
+    <style name="AppTheme.PrimaryTextView">
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#272727</item>
+        <item name="android:padding">1dp</item>
+    </style>
+    <style name="AppTheme.NoPaddingButton" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:padding">0dp</item>
+        <item name="android:textColor">#8D8E8F</item>
+    </style>
+    <style name="AppTheme.NoPaddingButton.Active" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:padding">0dp</item>
+        <item name="android:background">@drawable/button_glow_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="AppTheme.NoPaddingButton.Positive" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:padding">0dp</item>
+        <item name="android:background">#81C784</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="AppTheme.NoPaddingButton.Negetive" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:padding">0dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#525252</item>
+    </style>
+    <style name="AppTheme.month" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:padding">0dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#525252</item>
+    </style>
+    <style name="AppTheme.date" parent="TextAppearance.MaterialComponents.Headline3">
+        <item name="android:padding">3dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">sans</item>
+    </style>
+    <style name="AppTheme.year" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:padding">2dp</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:typeface">sans</item>
+    </style>
+
+    <style name="AppTheme.FabMenuLabel">
+        <item name="android:background">@drawable/fab_label_background</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <color name="appFabButton">#3F51B5</color>
+    <color name="appColorPrimary">#6200EE</color>
+    <color name="appColorPrimaryDark">#3700B3</color>
+    <color name="appColorPrimaryAccent">#03DAC6</color>
+    <color name="errorAccent">#F44336</color>
+    <color name="successAccent">#009688</color>
+
+</resources>

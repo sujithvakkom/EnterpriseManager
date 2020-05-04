@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/min_view_padding"
+    android:textAlignment="gravity">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textHeading"
+        style="@style/AppTheme.PrimaryTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:singleLine="true"
+        android:text="Headding"
+        app:layout_constraintEnd_toStartOf="@+id/textQty"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textQty"
+        style="@style/AppTheme.SeconderyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:drawablePadding="5dp"
+        android:text="Qty."
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/textHeading"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textHeading" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textBoxReceipt"
+        style="@style/AppTheme.SeconderyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:drawableLeft="@drawable/ic_receipt"
+        android:drawablePadding="5dp"
+        android:text="Receipt"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textSchedule"
+        app:layout_constraintStart_toEndOf="@+id/textSchedule" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textCustomerLocation"
+        style="@style/AppTheme.SeconderyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:drawableLeft="@drawable/ic_location"
+        android:drawablePadding="5dp"
+        android:text="Emirate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textBoxReceipt"
+        app:layout_constraintStart_toEndOf="@+id/textBoxReceipt" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/textSchedule"
+        style="@style/AppTheme.SeconderyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_calender"
+        android:drawablePadding="5dp"
+        android:text="Schedule"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/textHeading" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_parcel" />
+
+</android.support.constraint.ConstraintLayout>

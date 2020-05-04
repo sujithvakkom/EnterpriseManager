@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pref_head_office_default">http://200.100.101.7:81</string>
+</resources>

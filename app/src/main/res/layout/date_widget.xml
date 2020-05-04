@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tVDeliveryDateWidgetMonth"
+        style="@style/AppTheme.month"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calender_trim"
+        android:padding="3dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="Oct 2018"
+        app:layout_constraintEnd_toEndOf="@+id/tVDeliveryDateWidgetDate"
+        app:layout_constraintStart_toStartOf="@+id/tVDeliveryDateWidgetDate"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tVDeliveryDateWidgetDate"
+        style="@style/AppTheme.date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calender_body"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="31"
+        app:layout_constraintTop_toBottomOf="@id/tVDeliveryDateWidgetMonth"
+        tools:layout_editor_absoluteX="8dp" />
+
+</android.support.constraint.ConstraintLayout>

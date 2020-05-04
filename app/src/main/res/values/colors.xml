@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="scanner_line">#00ceff</color>
+    <color name="color_safe">#4DB6AC</color>
+    <color name="color_danger">#E57373</color>
+    <color name="cast_libraries_material_featurehighlight_outer_highlight_default_color_dark">#1D7BC5</color>
+    <color name="white">#FFFFFF</color>
+    <color name="error_background">#E57373</color>
+    <color name="error_foreground">#FFFFFF</color>
+    <color name="success_background">#4DB6AC</color>
+    <color name="success_foreground">#FFFFFF</color>
+    <color name="black">#000000</color>
+</resources>

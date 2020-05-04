@@ -1,0 +1,140 @@
+<resources>
+    <string name="app_name">GS Delivery Manager</string>
+    <string name="title_activity_login">Sign in</string>
+    <!-- Strings related to login -->
+    <string name="user_name">User Name</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_user_home">Home</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string-array name="list_preference_entries">
+        <item>Entry 1</item>
+        <item>Entry 2</item>
+        <item>Entry 3</item>
+    </string-array>
+
+    <string-array name="list_preference_entry_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+    </string-array>
+
+    <string-array name="multi_select_list_preference_default_value" />
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+    <string name="data_provider">Data Provider</string>
+    <string name="key_data_provider">KEY_DATA_PROVIDER</string>
+    <string name="pref_head_office_key">pref_head_office_key</string>
+    <string name="pref_head_office_default">http://gsmobiles.grandstores.ae:81</string>
+    <string name="pref_head_office_display_name">Head Office Setting Provider</string>
+    <string name="grant_permission">Grand Permission</string>
+    <string name="permission_camera">Permission to use camera</string>
+    <string name="grant">Grand</string>
+    <string name="cancel">Cancel</string>
+    <string name="low_storage_error">Low storage.</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_off">Log Off</string>
+    <string name="title_activity_delivery_jobs">Home Delivery</string>
+    <string name="title_scan_barcode">Scan Barcode</string>
+    <string name="title_activity_accept_job">Accept Job</string>
+    <string name="title_activity_delivery_actions">Delivery</string>
+    <string name="call_customer">Call Customer</string>
+    <string name="call_customer_service">Call Customer Care</string>
+    <string name="go_to_customer_location">Go to Location</string>
+    <string name="delivered">Delivered</string>
+    <string name="rejected">Rejected</string>
+    <string name="reschedule">Reschedule</string>
+    <string name="actions">Actions</string>
+    <string name="title_loaded_jobs">Loaded Jobs</string>
+    <string name="title_scheduled_jobs">Scheduled Jobs</string>
+    <string name="title_activity_accept_delivery">Accept Delivery</string>
+    <string name="external_dir">CustomerSign</string>
+    <string name="rejection_reason_title">Rejection Reason</string>
+    <string name="ok">OK</string>
+    <string name="select_items">Select Items</string>
+    <string name="select_all">Select All</string>
+    <string name="deselect_all">Deselect All</string>
+    <string name="biometric_enroll">Enroll biometric</string>
+    <string name="add_your_finger_auth">Add finger print</string>
+    <string name="save_your_finger_auth">Save my finger print</string>
+    <string name="scan_fingerprint">Scan fingerprint</string>
+    <string name="not_a_driver">Not a driver</string>
+    <string name="error_invalid_user">Invalid user</string>
+    <string name="checkin">Checkin</string>
+    <string name="synch">Refresh</string>
+
+    <string-array name="delivery_reject_reasons">
+        <item>Damage</item>
+        <item>Customer Return</item>
+    </string-array>
+</resources>

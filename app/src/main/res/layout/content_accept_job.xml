@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".AcceptJobActivity"
+    tools:showIn="@layout/activity_accept_job">
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tVDeliveryDesc"
+        style="@style/AppTheme.PrimaryTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_loading"
+        android:gravity="center"
+        android:singleLine="false"
+        android:text="Description"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/basicDetailsLinear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/tVDeliveryDesc"
+        tools:layout_editor_absoluteX="8dp">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tVDeliveryCustomerEmirate"
+            style="@style/AppTheme.SeconderyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_location"
+            android:drawablePadding="5dp"
+            android:text="Customer Emirate"
+            app:layout_constraintEnd_toStartOf="@+id/tVDeliveryReceiptDate"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tVDeliveryReceiptDate"
+            style="@style/AppTheme.SeconderyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_calender"
+            android:drawablePadding="5dp"
+            android:text="10 Jan 2018"
+            app:layout_constraintEnd_toStartOf="@+id/tVDeliveryReceipt"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tVDeliveryCustomerEmirate" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tVDeliveryReceipt"
+            style="@style/AppTheme.SeconderyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_receipt"
+            android:drawablePadding="5dp"
+            android:text="Receipt"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/tVDeliveryReceiptDate" />
+    </android.support.constraint.ConstraintLayout>
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tVDeliveryCustomerName"
+        style="@style/AppTheme.SeconderyTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:drawableLeft="@drawable/ic_customer_avatar"
+        android:drawablePadding="5dp"
+        android:text="Customer Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/basicDetailsLinear" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tVDeliveryCustomerAddress"
+        style="@style/AppTheme.SeconderyTextView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/ic_address"
+        android:drawablePadding="5dp"
+        android:text="Customer Address"
+        app:layout_constraintBottom_toTopOf="@+id/tVDeliveryCustomerPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2"
+        app:layout_constraintTop_toBottomOf="@+id/tVDeliveryCustomerName" />
+
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/tVDeliveryCustomerPhone"
+        style="@style/AppTheme.SeconderyTextView"
+        android:layout_width="0dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:drawablePadding="5dp"
+        android:text="Customer Phone"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView2" />
+
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/basicDetailsLinear">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tVDeliveryDateWidgetMonth"
+            style="@style/AppTheme.month"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/calender_trim"
+            android:gravity="center"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:text="Oct 2018"
+            app:layout_constraintEnd_toEndOf="@+id/tVDeliveryDateWidgetDate"
+            app:layout_constraintStart_toStartOf="@+id/tVDeliveryDateWidgetDate"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <android.support.v7.widget.AppCompatTextView
+            android:id="@+id/tVDeliveryDateWidgetDate"
+            style="@style/AppTheme.date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/calender_body"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="31"
+            app:layout_constraintTop_toBottomOf="@id/tVDeliveryDateWidgetMonth"
+            tools:layout_editor_absoluteX="8dp" />
+
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        tools:layout_editor_absoluteX="8dp">
+
+        <me.bendik.simplerangeview.SimpleRangeView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/deliveryPreferedTimeOfTheDay"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:layout_marginTop="8dp"
+            android:clickable="false"
+            app:activeLabelColor="@color/cast_expanded_controller_background_color"
+            app:activeThumbLabelColor="@color/design_default_color_primary"
+            app:activeTickColor="@color/design_default_color_primary_dark"
+            app:count="4"
+            app:end="0"
+            app:labelFontSize="10dp"
+            app:movable="true"
+            app:showActiveTicks="true"
+            app:showFixedTicks="true"
+            app:showLabels="true"
+            app:showTicks="true"
+            app:start="0"
+            app:tickRadius="5dp" />
+    </android.support.v7.widget.LinearLayoutCompat>
+
+    <ListView
+        android:id="@+id/listViewItems"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayoutCompat"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayoutCompat3" />
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/linearLayoutCompat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bDeliveryRejectLoad"
+                style="@style/AppTheme.NoPaddingButton.Negetive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Reject" />
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/bDeliveryLoad"
+                style="@style/AppTheme.NoPaddingButton.Positive"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accept" />
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+
+</android.support.constraint.ConstraintLayout>

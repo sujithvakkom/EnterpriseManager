@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_loaded_jobs"
+        android:icon="@drawable/ic_loaded_24"
+        android:title="@string/title_loaded_jobs" />
+    <item
+        android:id="@+id/navigation_scheduled_jobs"
+        android:icon="@drawable/ic_scheduled_24"
+        android:title="@string/title_scheduled_jobs" />
+</menu>
